@@ -1,0 +1,153 @@
+@use 'vars' as var;
+
+
+.experience {
+    &__h2 {
+        margin-bottom: 32px;
+    }
+}
+
+
+.exp {
+
+    &__item {
+        display: grid;
+        grid-template-columns: min-content auto;
+        column-gap: 166.5px;
+        position: relative;
+
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: calc(var.$tools-font-size / 10);
+            height: calc(100% - var.$tools-font-size - 24px);
+            bottom: 0;
+            left: calc(var.$tools-font-size * 3 / 10);
+            background: rgba($color: #fff, $alpha: .1);
+        }
+
+
+
+        &_void {
+            height: 100dvh;
+
+            &::before {
+                height: 100%;
+            }
+
+
+        }
+
+        &:nth-last-child(2)::before {
+            height: calc(100% - 24px);
+            top: 0;
+        }
+
+        &:last-child::before {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%);
+        }
+    }
+
+
+
+
+    &__year {
+        color: #FFF;
+        font-size: var.$tools-font-size;
+        line-height: 100%;
+        text-transform: uppercase;
+        opacity: 0.2;
+        grid-row: span 2;
+        white-space: nowrap;
+    }
+
+    &__h3 {
+        color: #FFF;
+        font-size: var.$code-font-size;
+        line-height: max(100%, calc(var.$tools-font-size / 2));
+        opacity: 0.5;
+
+    }
+
+    &__desc {
+        color: #FFF;
+        font-size: var(--main-text-font-size);
+        line-height: 145%;
+        opacity: 0.8;
+        margin-top: 24px;
+
+        &_design {
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+@media (max-width: var.$tablet-h) {
+    .exp {
+        &__item {
+            column-gap: 24px;
+        }
+    }
+}
+
+
+@media (max-width: var.$tablet-v) {
+    .exp {
+
+
+        &__desc {
+            grid-column: span 2;
+
+        }
+
+        &__item:first-child::before,
+        &__item:last-child::before {
+            display: none;
+        }
+
+        &__item:nth-child(2)::before {
+            height: calc(100% - 24px);
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: var.$phone-v) {
+    .exp {
+        &__item {
+            grid-template-columns: auto;
+        }
+
+        &__desc {
+            grid-column: unset;
+        }
+
+        &__year {
+            margin-bottom: 8px;
+        }
+
+
+
+        &__desc {
+            &_design {
+                width: 80%;
+                margin: 0 auto;
+                text-align: left;
+            }
+
+        }
+    }
+}

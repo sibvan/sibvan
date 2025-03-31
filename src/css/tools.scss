@@ -1,0 +1,135 @@
+@use 'vars' as var;
+
+
+
+.tools-list {
+    display: flex;
+    color: rgba($color: #fff, $alpha: .8);
+    line-height: 100%;
+    text-transform: uppercase;
+    font-size: var.$tools-font-size;
+
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        &_wip {
+            color: rgba($color: #fff, $alpha: .2);
+        }
+    }
+
+
+    &__li {
+        &_left {
+            position: sticky;
+            top: calc(var.$h-font-size + 32px);
+            white-space: nowrap;
+
+            &::after {
+                content: ' ';
+                white-space: pre;
+            }
+        }
+
+        &_chrome-devtools {
+            color: #1A73E8;
+        }
+
+        &_html {
+            color: #F16529;
+        }
+
+        &_javascript {
+            color: #F7DF1E;
+        }
+
+        &_figma {
+            &-f {
+                color: #F24E1E;
+            }
+
+            &-i {
+                color: #FF7262;
+            }
+
+            &-g {
+                color: #A259FF;
+            }
+
+            &-m {
+                color: #1ABCFE;
+            }
+
+            &-a {
+                color: #0ACF83;
+            }
+        }
+
+        &_gitlab {
+            &-git {
+                color: #FC6D26;
+            }
+            &-lab {
+                color: #FCA326;
+            }
+        }
+
+        &_github {
+            color: #fff;
+            opacity: .5;
+        }
+
+        &_rest-api {
+            color: #fff;
+            opacity: .5;
+        }
+
+        &_pixel-perfect {
+            color: #910BA2;
+        }
+
+        &_emmet {
+            color: #BAFFA9;
+        }
+
+        &_css {
+            color: #2965F1;
+        }
+
+        &_vs-code {
+            color: #3C99D4;
+        }
+
+        &_vite {
+            color: rgba(189,52,254,1);
+        }
+        
+        &_webpack {
+            color: #62b1d8;
+        }
+
+        &_sass {
+            color: #BF4080;
+        }
+
+        &_typescript {
+            color: #3178c6;
+        }
+
+        &_lighthouse {
+            color: #F4481E;
+        }
+    }
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__h2 {
+        margin-bottom: 32px;
+    }
+}

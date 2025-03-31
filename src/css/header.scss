@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    &__link {
+        text-decoration: none;
+        text-decoration-color: transparent;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    &__logo-text {
+        opacity: .8;
+        color: #fff;
+    }
+
+    &__logo-slash {
+        opacity: .2;
+        color: #fff;
+    }
+
+    &__link_tg {
+        color: #27A4E3;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: text-decoration-color .5s;
+        &:hover {
+            text-decoration-color: currentColor;
+        }
+    }
+}

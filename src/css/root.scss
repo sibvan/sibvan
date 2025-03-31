@@ -1,0 +1,12 @@
+@use 'vars' as var;
+
+:root {
+  --main-text-font-size: 24px;
+}
+
+
+  @media (max-width: var.$phone-h) {
+    :root {
+      --main-text-font-size: 16px;
+    }
+}

@@ -1,0 +1,96 @@
+@use 'vars' as var;
+
+.skills {
+
+    &__h2 {
+        margin-bottom: 8px;
+    }
+
+    &__ul {
+        column-count: 4;
+        column-gap: 24px;
+    }
+
+    &__li {
+        padding: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.20);
+        box-sizing: border-box;
+        display: inline-block;
+        margin-top: 24px;
+        transition: all .5s;
+        width: 100%;
+
+        &:hover {
+            transform: scale(112%);
+        }
+
+        &_blue:hover {
+            background: #61AFEF;
+        }
+
+        &_green:hover {
+            background: #98C379;
+        }
+    }
+
+    &__title {
+        color: #FFF;
+        font-size: var(--main-text-font-size);
+        line-height: 145%;
+        opacity: 0.8;
+        overflow-wrap: anywhere;
+    }
+
+    &__status {
+        color: #0F120F;
+        font-size: 16px;
+        line-height: 100%;
+        padding: 8px 16px;
+        box-sizing: border-box;
+        border-radius: 100px;
+        margin-top: 32px;
+        display: inline-block;
+
+        &_green {
+            background: #98C379;
+        }
+
+        &_blue {
+            background: #61AFEF;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: var.$tablet-h) {
+    .skills {
+        &__ul {
+            column-count: 3;
+        }
+    }
+}
+
+@media (max-width: var.$tablet-v) {
+    .skills {
+        &__ul {
+            column-count: 2;
+        }
+    }
+}
+
+@media (max-width: var.$phone-h) {
+    .skills {
+        &__ul {
+            column-count: 1;
+        }
+    }
+}
+

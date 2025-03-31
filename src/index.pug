@@ -1,0 +1,185 @@
+div.container
+  header.header
+    a.header__link(href="#")
+      span.header__logo-text Иван Коробицин
+      span.header__logo-slash /
+      span.header__logo-text Фулстек-разработчик
+    a.header__link.header__link_tg(href="#" target='_blank') Телеграм
+
+  main.main
+    section.hero
+      h1.h1 привет<br>я ваня
+      p.hero__text Джун маминой подруги. В течение последних 10 лет я занимался продуктовым дизайном, поэтому не понаслышке знаю что такое ИТ-сфера, работа над продуктом и взаимодействие с командой. Моя текущая история &mdash; это переход из дизайна в разработку. Я ещё только учусь, но хочу иметь больше практики, поэтому ищу свою первую работу в новой сфере. На этой странице я постарался максимально полно отразить свой бэкграунд.
+
+    section.about-me
+      h2.h2.about-me__h2 Обо мне
+      div.about-me__strs
+        p.about-me__str
+          span.about-me__code.about-me__code_num 1
+          span.about-me__code.about-me__code_const const
+          span.about-me__code.about-me__code_about-me aboutMe
+          span.about-me__code.about-me__code_blue =
+          span.about-me__code.about-me__code_symbol {
+        p.about-me__str
+          span.about-me__code.about-me__code_num 2
+          span.about-me__code.about-me__code_red age
+          span.about-me__code.about-me__code_blue :
+          span.about-me__code.about-me__code_orange 31
+          span.about-me__code.about-me__code_symbol ,
+        p.about-me__str
+          span.about-me__code.about-me__code_num 3
+          span.about-me__code.about-me__code_red location
+          span.about-me__code.about-me__code_blue :
+          span.about-me__code.about-me__code_green 'Тбилиси'
+          span.about-me__code.about-me__code_symbol ,
+        p.about-me__str
+          span.about-me__code.about-me__code_num 4
+          span.about-me__code.about-me__code_red status
+          span.about-me__code.about-me__code_blue :
+          span.about-me__code.about-me__code_green 'Ищу работу'
+          span.about-me__code.about-me__code_symbol ,
+        p.about-me__str
+          span.about-me__code.about-me__code_num 5
+          span.about-me__code.about-me__code_red education
+          span.about-me__code.about-me__code_blue :
+          span.about-me__code.about-me__code_green 'ТГИК, бизнсес-информатика'
+          span.about-me__code.about-me__code_symbol ,
+        p.about-me__str
+          span.about-me__code.about-me__code_num 6
+          span.about-me__code.about-me__code_red languages
+          span.about-me__code.about-me__code_blue :
+          span.about-me__code.about-me__code_symbol [
+          span.about-me__code.about-me__code_green 'Русский'
+          span.about-me__code.about-me__code_symbol ,
+          span.about-me__code.about-me__code_green 'английский'
+          span.about-me__code.about-me__code_symbol ,
+          span.about-me__code.about-me__code_green 'грузинский'
+          span.about-me__code.about-me__code_symbol ]
+        p.about-me__str
+          span.about-me__code.about-me__code_num 7
+          span.about-me__code.about-me__code_symbol }
+          span.about-me__code.about-me__code_cursor |
+
+
+    section.skills
+      h2.h2.skills__h2 Навыки
+      ul.skills__ul
+        each val, key in {'Работаю в VS Code и CodePen': 'Готово', 'Коммуникабельный, понимаю свою роль в команде разработки': 'Готово', 'Владею React.js и Vue.js': 'Изучаю', 'Умею писать тесты на Jest и Vitest': 'Изучаю', 'Работаю в системе контроля версий Git': 'Готово', 'Знаю особенности Node.js': 'Изучаю', 'Использую препроцессор Sass': 'Готово', 'Создаю высоконагруженный бэкенд': 'Изучаю', 'Верстаю по Pixel Perfect': 'Готово', 'Программирую на TypeScript': 'Готово', 'Программирую на JavaScript, использую REST API': 'Готово', 'Владею навыками адаптивной вёрстки на HTML и CSS': 'Готово', 'Работаю со сборщиками Webpack, Vite': 'Готово', 'Владею инструментами оптимизации изображений и кода': 'Готово', 'Работаю с внешними API': 'Готово', 'Придерживаюсь компонентного подхода': 'Готово', 'Умею использовать npm для работы с зависимостями': 'Готово', 'Работаю с базами данных': 'Изучаю', 'Работаю в графическом редакторе Figma': 'Готово'}
+          if(val=='Готово')
+            li.skills__li.skills__li_green
+              p.skills__title= key
+              p.skills__status.skills__status_green= val
+          else if(val=='Изучаю')
+            li.skills__li.skills__li_blue
+              p.skills__title= key
+              p.skills__status.skills__status_blue= val
+
+
+    section.tools
+      h2.h2.tools__h2 Инструменты
+      div.tools-list
+        ul.tools-list__left
+          li.tools-list__li_left Уже изучил
+        ul.tools-list__right
+          li.tools-list__li.tools-list__li_chrome-devtools Chrome DevTools
+          li.tools-list__li.tools-list__li_html HTML
+          li.tools-list__li.tools-list__li_javascript JavaScript
+          li.tools-list__li
+            span.tools-list__li_figma-f F
+            span.tools-list__li_figma-i i
+            span.tools-list__li_figma-g g
+            span.tools-list__li_figma-m m
+            span.tools-list__li_figma-a a
+          li.tools-list__li
+            span.tools-list__li_gitlab-git Git
+            span.tools-list__li_gitlab-lab Lab
+          li.tools-list__li.tools-list__li_github GitHub
+          li.tools-list__li.tools-list__li_pixel-perfect Pixel Perfect
+          li.tools-list__li.tools-list__li_emmet Emmet
+          li.tools-list__li.tools-list__li_vite Vite
+          li.tools-list__li.tools-list__li_webpack Webpack
+          li.tools-list__li.tools-list__li_rest-api REST API
+          li.tools-list__li.tools-list__li_sass Sass
+          li.tools-list__li.tools-list__li_typescript TypeScript
+          li.tools-list__li.tools-list__li_lighthouse Lighthouse
+          li.tools-list__li.tools-list__li_css CSS
+          li.tools-list__li.tools-list__li_vs-code VS Code
+      div.tools-list
+        ul.tools-list__left
+          li.tools-list__li_left Сейчас учу
+        ul.tools-list__right.tools-list__right_wip
+          li.tools-list__li Node.js
+          li.tools-list__li MongoDB
+          li.tools-list__li MySQL
+          li.tools-list__li Vue 3.0
+          li.tools-list__li React
+          li.tools-list__li Python
+          li.tools-list__li SQL
+          li.tools-list__li Redis
+          li.tools-list__li Vitest
+          li.tools-list__li Jest
+          li.tools-list__li Pinia
+          li.tools-list__li Element Plus
+          li.tools-list__li Eslint
+
+    section.projects
+      h2.h2.projects__h2 Проекты
+      div.projects-list
+        div.projects-list__project.projects-list__project_violet
+          h3.projects-list__h3 Sibvan
+          p.projects-list__p Мой первый проект&nbsp;&mdash; это мой сайт. Тот, на&nbsp;котором вы&nbsp;сейчас находитесь. Сначала я&nbsp;его задизайнил, а&nbsp;потом сверстал: сбросил стили, подключил шрифт, использовал БЭМ&nbsp;&mdash; всё как надо. Это не&nbsp;первая версия. Большой опыт в&nbsp;дизайне позволяет мне легко отказываться от&nbsp;уже реализованных идей в&nbsp;пользу более удачных. В&nbsp;общем я&nbsp;не&nbsp;расстраиваюсь, когда работа уходит в&nbsp;стол&nbsp;&mdash; это нормальная часть процесса.
+          div.projects-list__btns
+            a.projects-list__url.projects-list__url_sibvan(href="#" target='_blank')
+              span.projects-list__link-text sibvan.dev
+              span.projects-list__arrow →
+            a.projects-list__url(href="#" target='_blank')
+              span.projects-list__link-text Код на GitLab
+              span.projects-list__arrow →
+        div.projects-list__project.projects-list__project_blank
+          h3.projects-list__h3
+          p.projects-list__p 
+          div.projects-list__btns.projects-list__btns_hide
+            a.projects-list__url(href="#" target='_blank')
+              span.projects-list__link-text sibvan.dev
+              span.projects-list__arrow →
+            a.projects-list__url(href="#" target='_blank')
+              span.projects-list__link-text Код на GitLab
+              span.projects-list__arrow →
+        div.projects-list__project.projects-list__project_blank-rev
+          h3.projects-list__h3 
+          p.projects-list__p
+          div.projects-list__btns.projects-list__btns_hide
+            a.projects-list__url(href="#" target='_blank')
+              span.projects-list__link-text sibvan.dev
+              span.projects-list__arrow →
+            a.projects-list__url(href="#" target='_blank')
+              span.projects-list__link-text Код на GitLab
+              span.projects-list__arrow →
+
+    section.experience
+      h2.h2.experience__h2 Опыт работы
+      div.exp
+        div.exp__item
+          p.exp__year 2015–2024
+          h3.exp__h3 Продуктовый<br>дизайнер
+          p.exp__desc За&nbsp;время своей карьеры я&nbsp;успел поработать в&nbsp;3&nbsp;местах: небольшой студии mintrocket, не&nbsp;нуждающимся в&nbsp;представлении &laquo;Яндексе&raquo; и&nbsp;продуктовой компании &laquo;Бобдей&raquo;. Помимо непосредственной работы мне всегда было интересно расти как специалист, поэтому я&nbsp;проходил обучение. Из&nbsp;самого значимого для меня могу отметить Школу дизайнеров бюро Горбунова и&nbsp;менторскую программу в&nbsp;Duo Sapiens.
+        div.exp__item.exp__item_void
+        div.exp__item.exp__item_void
+          p.exp__year
+          h3.exp__h3
+          p.exp__desc.exp__desc_design P. S. Это долгие 10 лет в дизайне…
+        div.exp__item.exp__item_void
+        div.exp__item
+          p.exp__year 2015–20**
+          h3.exp__h3 Первая работа<br>разработчиком
+          p.exp__desc Я знаю, что лучший способ набраться опыта — это как можно скорее найти свою первую работу. Я ещё много не умею, но быстро учусь. Впреди меня ждёт интересный путь в новом ремесле. Если вы ищите джуна, чтобы вырастить из него офигенного специалиста, давайте пройдём этот путь вместе. Жду вас в уютном Телеграмчике.
+
+
+
+  footer.footer
+    div.footer__inner
+      a.footer__btn(href = '#' target='_blank') Написать мне в Телеграм
+      h1.h1.footer__h1
+        span ©
+        span ваня
+        span 2025

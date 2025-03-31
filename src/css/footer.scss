@@ -1,0 +1,87 @@
+@use 'vars' as var;
+
+.footer {
+    padding-top: 118.5px;
+
+    &__h1 {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #FFF;
+        opacity: 0.2;
+        color: transparent;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__inner {
+        position: relative;
+    }
+
+    &__btn {
+        color: #FFF;
+        font-size: var.$code-font-size;
+        line-height: 100%;
+        padding: 24px 32px;
+        background: #27A4E3;
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 1;
+        text-decoration: none;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 14%;
+        bottom: 0;
+        width: fit-content;
+        height: fit-content;
+
+        transition: all .5s;
+        white-space: nowrap;
+
+        &:hover {
+            background: #fff;
+            color: #27A4E3;
+        }
+    }
+}
+
+
+@media (max-width: var.$tablet-h) {
+    .footer {
+        &__btn {
+            left: 12.7%;
+        }
+    }
+}
+
+
+@media (max-width: var.$tablet-v) {
+    .footer {
+        &__btn {
+            left: 11.5%;
+        }
+    }
+}
+
+
+@media (max-width: var.$phone-h) {
+    .footer {
+        &__btn {
+            left: 7%;
+            padding: 16px 24px;
+        }
+    }
+}
+
+
+@media (max-width: var.$phone-v) {
+    .footer {
+        &__btn {
+
+            left: 0;
+            right: 0;
+            padding: 8px 16px;
+        }
+    }
+}

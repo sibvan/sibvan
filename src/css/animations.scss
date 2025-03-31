@@ -1,0 +1,21 @@
+@keyframes blink-cursor {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+
+
+
+  @keyframes blink-project {
+    from {
+      border: 1px solid rgba(255, 255, 255, 0.20);
+    }
+  
+    to {
+      border: 1px solid rgba(255, 255, 255, 0);
+    }
+  }
