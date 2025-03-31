@@ -24,7 +24,7 @@
     &__li {
         &_left {
             position: sticky;
-            top: calc(var.$h-font-size + 32px);
+            top: calc(var.$h-font-size + 32px + 118.5px);
             white-space: nowrap;
 
             &::after {
