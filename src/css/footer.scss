@@ -36,7 +36,7 @@
         width: fit-content;
         height: fit-content;
 
-        transition: all .5s;
+        transition: background .5s, color .5s;
         white-space: nowrap;
 
         &:hover {
