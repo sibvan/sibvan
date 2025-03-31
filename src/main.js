@@ -20,6 +20,6 @@ function onScroll() {
 // Cмена текста в кнопке
 const sibvanBtnEl = document.querySelector('.projects-list__url_sibvan');
 sibvanBtnEl.addEventListener('click', function(e) {
-    e.preventDefault
-    changeText();
+    e.preventDefault();
+    changeText(sibvanBtnEl);
 });
