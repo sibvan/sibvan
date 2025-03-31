@@ -1,4 +1,4 @@
-import './css/main.scss';
+import './main.scss';
 import { typeCode } from './js/about-me';
 import { changeText } from './js/projects';
 
@@ -20,6 +20,6 @@ function onScroll() {
 // Cмена текста в кнопке
 const sibvanBtnEl = document.querySelector('.projects-list__url_sibvan');
 sibvanBtnEl.addEventListener('click', function(e) {
-    e.preventDefault();
-    changeText(sibvanBtnEl);
+    e.preventDefault
+    changeText();
 });

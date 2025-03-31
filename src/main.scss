@@ -1,0 +1,17 @@
+// Сброс стилей
+@use '../node_modules/reset-css/sass/reset';
+
+// Мои стили
+@use './css/common';
+@use './css/header';
+@use './css/tools';
+@use './css/hero';
+@use './css/about-me';
+@use './css/skills';
+@use './css/projects';
+@use './css/experience';
+@use './css/footer';
+@use './css/root';
+
+// Шрифт
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');

@@ -8,3 +8,6 @@ const locals = { name: "My Pug" }
 export default defineConfig({
   plugins: [pugPlugin(options, locals)],
 })
+
+
+
