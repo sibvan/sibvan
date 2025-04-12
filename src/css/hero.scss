@@ -11,6 +11,21 @@
         line-height: 145%;
         opacity: 0.8;
     }
+
+    &__title {
+        position: relative;
+    }
+
+
+    &__photo {
+        position: absolute;
+        width: calc(var.$h-font-size * 0.8);
+        height: calc(var.$h-font-size * 0.8);
+        background: url('./img/me.png') no-repeat center / cover;
+        left: calc(var.$h-font-size * 0.65);
+        top: calc(var.$h-font-size + var.$h-font-size / 10);
+    }
+
 }
 
 
@@ -38,7 +53,19 @@
     .hero {
         padding-top: max(calc(100dvh - var.$h-font-size * 2 - 68px - 12px - 12px), 118.5px);
 
+        &__photo {
+            position: static;
+            width: calc(var.$h-font-size * 2);
+            height: calc(var.$h-font-size * 2);
+            transform: scaleX(-1);
+        }
 
+        &__title {
+            display: flex;
+            justify-content: space-between;
+        }
     }
+
+
 
 }

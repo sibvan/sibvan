@@ -35,9 +35,8 @@ body {
 }
 
 .h1 {
-    color: #FFF;
+    color: rgba($color: #fff, $alpha: .5);
     text-transform: uppercase;
-    opacity: 0.5;
     line-height: 100%;
     font-size: var.$h-font-size;
 }
