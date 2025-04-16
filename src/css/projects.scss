@@ -80,10 +80,7 @@
         display: inline-block;
         white-space: nowrap;
 
-        &::after {
-            content: ' ';
-            white-space: pre;
-        }
+ 
     }
 
     &__btns {
@@ -98,13 +95,13 @@
     }
 
     &__arrow {
-        color: #FFF;
+        color: rgba($color: #fff, $alpha: .8);
         font-size: 16px;
         line-height: 100%;
         padding: 8px 16px;
         background: #0F120F;
         display: inline-block;
-        transform: translateX(-28px);
+        transform: translateX(-16px);
         transition: transform .5s;
     }
 
