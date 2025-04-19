@@ -128,35 +128,29 @@ div.container
       h2.h2.projects__h2 Проекты
       div.projects-list
         div.projects-list__project.projects-list__project_violet
-          h3.projects-list__h3 Sibvan
-          p.projects-list__p Мой первый проект&nbsp;&mdash; это мой сайт. Тот, на&nbsp;котором вы&nbsp;сейчас находитесь. Сначала я&nbsp;его задизайнил, а&nbsp;потом сверстал: сбросил стили, подключил шрифт, использовал БЭМ&nbsp;&mdash; всё как надо. Это не&nbsp;первая версия. Большой опыт в&nbsp;дизайне позволяет мне легко отказываться от&nbsp;уже реализованных идей в&nbsp;пользу более удачных. В&nbsp;общем я&nbsp;не&nbsp;расстраиваюсь, когда работа уходит в&nbsp;стол&nbsp;&mdash; это нормальная часть процесса.
+          div.projects-list__text
+            h3.projects-list__h3 Sibvan
+            p.projects-list__p Мой первый проект&nbsp;&mdash; это мой сайт. Тот, на&nbsp;котором вы&nbsp;сейчас находитесь. Сначала я&nbsp;его задизайнил, а&nbsp;потом сверстал: сбросил стили, подключил шрифт, использовал БЭМ&nbsp;&mdash; всё как надо. Это не&nbsp;первая версия. Большой опыт в&nbsp;дизайне позволяет мне легко отказываться от&nbsp;уже реализованных идей в&nbsp;пользу более удачных. В&nbsp;общем я&nbsp;не&nbsp;расстраиваюсь, когда работа уходит в&nbsp;стол&nbsp;&mdash; это нормальная часть процесса.
           div.projects-list__btns
             a.projects-list__url.projects-list__url_sibvan(href="#" target='_blank')
-              span.projects-list__link-text sibvan.dev
+              span.projects-list__link-text.projects-list__link-text_sibvan sibvan.dev
               span.projects-list__arrow →
             a.projects-list__url(href="https://github.com/sibvan/sibvan" target='_blank')
               span.projects-list__link-text Код на GitLab
               span.projects-list__arrow →
-        div.projects-list__project.projects-list__project_blank
-          h3.projects-list__h3
-          p.projects-list__p 
-          div.projects-list__btns.projects-list__btns_hide
-            a.projects-list__url(href="#" target='_blank')
-              span.projects-list__link-text sibvan.dev
+        div.projects-list__project.projects-list__project_orange
+          div.projects-list__text
+            h3.projects-list__h3 Krtl
+            p.projects-list__p Krtl&nbsp;&mdash; проект, который я&nbsp;создал, чтобы практиковать набор текста на&nbsp;грузинской клавиатуре. Не&nbsp;было удобного инструмента для этого, и&nbsp;я&nbsp;решил сделать свой. Krtl получился простым и&nbsp;функциональным, без лишних деталей. Всё сделано мной&nbsp;&mdash; от&nbsp;дизайна до&nbsp;анимаций. Проект стабильно работает, и&nbsp;я&nbsp;продолжаю его улучшать, добавляя идеи из&nbsp;бэклога.
+          div.projects-list__btns
+            a.projects-list__url.projects-list__url_sibvan(href="https://krtl.app/" target='_blank')
+              span.projects-list__link-text krtl.app
               span.projects-list__arrow →
-            a.projects-list__url(href="#" target='_blank')
+            a.projects-list__url(href="https://github.com/sibvan/krtl" target='_blank')
               span.projects-list__link-text Код на GitLab
               span.projects-list__arrow →
-        div.projects-list__project.projects-list__project_blank-rev
-          h3.projects-list__h3 
-          p.projects-list__p
-          div.projects-list__btns.projects-list__btns_hide
-            a.projects-list__url(href="#" target='_blank')
-              span.projects-list__link-text sibvan.dev
-              span.projects-list__arrow →
-            a.projects-list__url(href="#" target='_blank')
-              span.projects-list__link-text Код на GitLab
-              span.projects-list__arrow →
+    
+    
 
     section.experience
       h2.h2.experience__h2 Опыт работы

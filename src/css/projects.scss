@@ -12,11 +12,16 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 
+
+
     &__project {
         padding: 32px;
         box-sizing: border-box;
         position: relative;
         border: 1px solid rgba(255, 255, 255, 0.20);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
 
         &::before {
@@ -42,19 +47,10 @@
             background: #C678DD;
         }
 
-        &_blank {
-            animation-name: blink-project;
-            animation-duration: 1000ms;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
+        &_orange {
+            background: #D19A66;
         }
 
-        &_blank-rev {
-            animation-name: blink-project;
-            animation-duration: 1000ms;
-            animation-iteration-count: infinite;
-            animation-direction: alternate-reverse;
-        }
     }
 
     &__h3 {
@@ -120,12 +116,8 @@
 @media (max-width: var.$tablet-h) {
     .projects-list {
         grid-template-columns: repeat(2, 1fr);
-
-        &__project {
-            &_blank-rev {
-                display: none;
-            }
-        }
+        grid-auto-rows: 1fr;
+ 
 
     }
 }
@@ -136,11 +128,7 @@
     .projects-list {
         grid-template-columns: repeat(1, 1fr);
 
-        &__project {
-            &_blank-rev, &_blank {
-                display: none;
-            }
-        }
+   
 
     }
 }
