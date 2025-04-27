@@ -91,6 +91,13 @@
         &__ul {
             column-count: 1;
         }
+        &__li {
+    
+    
+            &:hover {
+                transform: scale(108%);
+            }
+        }
     }
 }
 
