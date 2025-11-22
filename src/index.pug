@@ -1,0 +1,15 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Загрузка...
+    link(rel="stylesheet" href="style.scss")
+    link(rel="shortcut icon", href="/icons/favicon.svg", type="image/svg+xml")
+  body
+    div#app
+      include blocks/hero/hero.pug
+      include blocks/stack/stack.pug
+      include blocks/projects/projects.pug
+      include blocks/footer/footer.pug
+      script(type="module" src="main.ts") 
