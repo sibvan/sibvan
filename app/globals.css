@@ -1,35 +1,40 @@
 @import "tailwindcss";
 
-
 @theme inline {
   --color-black: #121213;
-  --color-white: #F1F1F4;
-  --color-grey-200: #1F1F20;
-  --color-prosense: #2E79E4;
+  --color-white: #f1f1f4;
+  --color-grey-200: #1f1f20;
+
+  --color-red: #e15e42;
+  --color-yellow: #ffc700;
+  --color-green: #15ad70;
+
+  --color-prosense: #2e79e4;
 }
 
 .cards-gap {
-  @apply gap-2 md:gap-4 xl:gap-6
+  @apply gap-2 md:gap-4 xl:gap-6;
 }
 
 .card-default {
   @apply bg-grey-200 p-6;
 }
 
+.text-age {
+  @apply text-[max(96px,calc((100dvw-12px-12px-8px)/2-48px))]/[100%] font-extralight opacity-20 md:text-[calc((100dvw-16px-16px-12px-12px)/3-48px)] xl:text-[min(312px,calc((100dvw-24px-24px-24px-12px-12px)/4-48px))];
+}
 
 .text-title {
-  @apply text-[38px]/[100%]
+  @apply text-[38px]/[100%];
 }
 
 .text-24 {
-  @apply text-[16px]/[120%] md:text-[20px] xl:text-[24px]
+  @apply text-[16px]/[120%] md:text-[20px] xl:text-[24px];
 }
 
 .text-16 {
-  @apply text-[16px]/[100%]
+  @apply text-[16px]/[100%];
 }
-
-
 
 body {
   background: var(--color-black);
