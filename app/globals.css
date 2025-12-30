@@ -1,15 +1,38 @@
 @import "tailwindcss";
 
-:root {
+
+@theme inline {
   --color-black: #121213;
   --color-white: #F1F1F4;
+  --color-grey-200: #1F1F20;
+  --color-prosense: #2E79E4;
 }
 
-@theme inline {}
+.cards-gap {
+  @apply gap-2 md:gap-4 xl:gap-6
+}
+
+.card-default {
+  @apply bg-grey-200 p-6;
+}
+
+
+.text-title {
+  @apply text-[38px]/[100%]
+}
+
+.text-24 {
+  @apply text-[16px]/[120%] md:text-[20px] xl:text-[24px]
+}
+
+.text-16 {
+  @apply text-[16px]/[100%]
+}
+
 
 
 body {
   background: var(--color-black);
   color: var(--color-white);
-  font-family: "Cascadia Code";
+  font-family: "Cascadia Code", monospace;
 }
