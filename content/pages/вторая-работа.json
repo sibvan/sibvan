@@ -5,7 +5,8 @@
   "title": "Вторая работа",
   "company": {
     "title": "123",
-    "url": {}
+    "url": {},
+    "color": "#15AD70"
   },
   "period": "456",
   "responsibilities": [
