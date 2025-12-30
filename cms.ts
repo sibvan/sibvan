@@ -3,7 +3,7 @@ import { createCMS } from "alinea/next";
 
 // Create types for your CMS schema
 
-const ExpItem = Config.type("Место работы", {
+export const ExpItem = Config.type("Место работы", {
   fields: {
     title: Field.text("Должность"),
     company: Field.object("Компания", {
