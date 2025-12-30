@@ -1,4 +1,5 @@
 import Card from "../ui/Card";
+import Image from "next/image";
 
 type HeroProps = {
   age: number;
@@ -29,15 +30,43 @@ const Hero = (props: HeroProps) => {
       </div>
       <Card className="card-default col-span-full flex aspect-296/144 justify-between md:col-span-2 md:row-span-2 md:aspect-auto xl:-order-2">
         <p className="text-16">Возраст</p>
-        <p>{age}</p>
+        <p className="text-age">{age}</p>
       </Card>
-      <Card className="card-default aspect-square md:row-span-2">Фото</Card>
-      <Card className="card-default aspect-square md:aspect-auto">Статус</Card>
-      <Card className="card-default col-span-full aspect-296/144 md:col-span-1 md:aspect-auto">
-        Языки
+      <Card className="card-default aspect-square md:row-span-2">
+        <Image
+          className="w-full"
+          alt="Моё фото"
+          width={312}
+          height={312}
+          src="/hero/me.webp"
+        />
       </Card>
-      <Card className="card-default col-span-full aspect-296/144 md:aspect-auto xl:-order-1 xl:col-span-1 xl:row-span-4">
-        Город
+      <Card className="card-default relative aspect-square md:aspect-auto">
+        <p className="text-16">Статус</p>
+        <Image
+          className="absolute top-6 right-6 h-[calc(100%-48px)] w-auto animate-[spin_10s_linear_infinite]"
+          alt="#opentowork"
+          width={120}
+          height={120}
+          src="/hero/opentowork.webp"
+        />
+      </Card>
+      <Card className="card-default relative col-span-full aspect-296/144 md:col-span-1 md:aspect-auto">
+        <p className="text-16">Языки</p>
+        <div className="absolute top-6 right-6 flex h-[calc(100%-48px)] w-[calc(100%-48px)] items-end">
+          <div className="bg-red flex h-[calc(100%/3)] flex-1 items-center justify-center rounded-[10px]">
+            <p className="text-16 text-black opacity-20">Ru</p>
+          </div>
+          <div className="bg-yellow flex h-[calc(100%/3*2)] flex-1 items-center justify-center rounded-[10px]">
+            <p className="text-16 text-black opacity-50">En</p>
+          </div>
+          <div className="bg-green flex h-full flex-1 items-center justify-center rounded-[10px]">
+            <p className="text-16 text-black opacity-80">Ge</p>
+          </div>
+        </div>
+      </Card>
+      <Card className="card-default border-grey-200 col-span-full aspect-296/144 border-8 bg-[url(/hero/map.webp)] bg-cover bg-center bg-no-repeat md:aspect-auto xl:-order-1 xl:col-span-1 xl:row-span-4">
+        <p className="text-16">Город</p>
       </Card>
     </section>
   );
