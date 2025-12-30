@@ -1,0 +1,55 @@
+{
+  "_id": "37Ycnobh19VLlMY7iHaNQVqPugC",
+  "_type": "ExpItem",
+  "_index": "a0",
+  "title": "Фронтенд-разработчик",
+  "company": {
+    "title": "ProSense",
+    "url": {
+      "_id": "37Ycs6B5xdgmJXdrxKLJalJW4tP",
+      "_type": "url",
+      "_url": "https://www.prosense.digital/",
+      "_title": "",
+      "_target": "_self"
+    }
+  },
+  "period": "С ноября 2025 года",
+  "responsibilities": [
+    {
+      "_id": "37Yct6ylYhHHZUb6Pkm2eT6Iz0g",
+      "_index": "a0",
+      "_type": "Responsibility",
+      "description": "Разрабатывал интерфейсы на React / Next.js с использованием App Router"
+    },
+    {
+      "_id": "37Yctc3zbsE4DyeCM7n21hPcgjR",
+      "_index": "a1",
+      "_type": "Responsibility",
+      "description": "Реализовывал серверный рендеринг, streaming и Suspense"
+    },
+    {
+      "_id": "37Ycu766L6qZZ76xGcLLljb9y31",
+      "_index": "a2",
+      "_type": "Responsibility",
+      "description": "Работал с REST API, асинхронным получением данных и обработкой ошибок"
+    },
+    {
+      "_id": "37YcuZUd064ZqMgCXe7sQC7li7r",
+      "_index": "a3",
+      "_type": "Responsibility",
+      "description": "Использовал модульные стили (CSS Modules), Tailwind"
+    },
+    {
+      "_id": "37YcvAlrPNI1QvsjVdob43lqvek",
+      "_index": "a4",
+      "_type": "Responsibility",
+      "description": "Оптимизировал загрузку страниц и улучшал UX"
+    },
+    {
+      "_id": "37YcvXvBD7A56aVBJ520crSDGaR",
+      "_index": "a5",
+      "_type": "Responsibility",
+      "description": "Участвовал в код-ревью и рефакторинге существующего кода"
+    }
+  ]
+}
