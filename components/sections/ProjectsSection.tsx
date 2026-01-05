@@ -53,13 +53,13 @@ const ProjectsSection = (props: ProjectsProps) => {
           >
             <Card className="card-default flex aspect-square flex-col gap-6 transition-shadow duration-300 ease-in-out group-hover:inset-shadow-[0px_0px_0px_1000px] group-hover:inset-shadow-black group-hover:outline group-hover:-outline-offset-1 group-hover:outline-white/10">
               <p className="text-16 card-url text-right">{item.url._url}</p>
-              <div className="bg-grey-100 flex-1 overflow-hidden rounded-[10px]">
+              <div className="relative flex-1 overflow-hidden rounded-[10px]">
+                <div className="bg-grey-100 absolute h-full w-full animate-pulse"></div>
                 <video
-                  className="h-full w-full object-cover"
+                  className="relative z-1 h-full w-full object-cover"
                   muted
                   autoPlay
                   loop
-                  playsInline
                 >
                   <source src={`/cms${item.video.href}`} type="video/mp4" />
                 </video>
