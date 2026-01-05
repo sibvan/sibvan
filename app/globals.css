@@ -4,12 +4,24 @@
   --color-black: #121213;
   --color-white: #f1f1f4;
   --color-grey-200: #1f1f20;
+  --color-grey-100: #575759;
 
   --color-red: #e15e42;
   --color-yellow: #ffc700;
   --color-green: #15ad70;
 
   --color-prosense: #2e79e4;
+}
+
+.card-url {
+  background:
+    radial-gradient(circle at 8px 8px, var(--color-red) 8px, transparent 8px),
+    radial-gradient(
+      circle at 32px 8px,
+      var(--color-yellow) 8px,
+      transparent 8px
+    ),
+    radial-gradient(circle at 56px 8px, var(--color-green) 8px, transparent 8px);
 }
 
 .cards-gap {
@@ -25,10 +37,14 @@
 }
 
 .text-title {
-  @apply text-[38px]/[100%];
+  @apply text-[38px]/[100%] md:text-[53px] xl:text-[70px];
 }
 
 .text-24 {
+  @apply text-[16px]/[100%] md:text-[20px] xl:text-[24px];
+}
+
+.text-24-120 {
   @apply text-[16px]/[120%] md:text-[20px] xl:text-[24px];
 }
 
