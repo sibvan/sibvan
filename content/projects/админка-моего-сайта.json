@@ -3,7 +3,17 @@
   "_type": "Project",
   "_index": "a1",
   "title": "Админка моего сайта",
-  "url": {},
-  "video": {},
+  "url": {
+    "_id": "37psWbOJL2OgXPVkHSAbYlM8NUT",
+    "_type": "url",
+    "_url": "http://alineacms.com",
+    "_title": "",
+    "_target": "_blank"
+  },
+  "video": {
+    "_id": "37psViwi49fFLCfjk3duPHIxm18",
+    "_type": "file",
+    "_entry": "37psRnLl7u5LktYDhQ6LmZixcc8"
+  },
   "description": "Сделана на Alinea CMS"
 }
