@@ -1,0 +1,20 @@
+{
+  "_id": "37lINtPFO9G1yqd8bBiAOdL2Pmv",
+  "_type": "MediaFile",
+  "_index": "aC",
+  "title": "alinea",
+  "location": "/alinea.37lINsawWqlPE1a3CJHxrsqyc1R.svg",
+  "previewUrl": "",
+  "extension": ".svg",
+  "size": 2202,
+  "hash": "01c23e12",
+  "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAGKADAAQAAAABAAAAGAAAAADiNXWtAAABNUlEQVRIDe3SP0vDQBjH8ZxGoTo4FOlgh4iz4F4QX0ChaHF2acdS0FEnwU1Q6Jtwdy7OGWpBXAWnFpFWHexf9Pz+QrKVCHX0Hvjw5HJ3zyVP4nkuXAdcB2Z2wFqbRV6T5KWZi/5yk6IXuMMBXrE4bz1fGymwQZI3DJFEm4sr+KzZIfeRQ2iMsWTt3SZ1GPfisR6mgGesa0EVYwwwwiWSNyhz/YFNKPqYoAGDJrrQ/SOs4QlJLbvAKcc4RRZdpEWRyTr2sYs93KCFExxCNVXrDJ5a9I4AW1hFWrwwqVZkoHYafOMRt1At1VCtANFp5+QS7uMx6feg5w+sukYFNejb6ZAQmisjeoLkV1xhPED08eK5L7LecoplTKCn9jlA19qrfQzNp8YK7qlFepvoJ9I9F64D/7kDPwUrr1Z0PX8TAAAAAElFTkSuQmCC",
+  "averageColor": "#fffefc",
+  "focus": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "thumbHash": "PwiCBQAihZeIh4h4+AAAAAAAiHeHd3CX1w==",
+  "width": 24,
+  "height": 24
+}
