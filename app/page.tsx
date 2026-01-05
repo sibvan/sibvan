@@ -1,65 +1,61 @@
-import Image from "next/image";
+import { cms } from "@/cms";
+import { Job } from "@/cms";
+import { Project } from "@/cms";
+import { Stack } from "@/cms";
 
-export default function Home() {
+import HeroSection from "@/components/sections/HeroSection";
+import JobsSection from "@/components/sections/JobsSection";
+import ProjectsSection from "@/components/sections/ProjectsSection";
+import StacksSection from "@/components/sections/StacksSection";
+import FooterSection from "@/components/sections/FooterSection";
+
+export default async function Home() {
+  const socials = [
+    {
+      alt: "LinkedIn",
+      src: "/footer/linkedin.svg",
+      bg: "#007EBB",
+      href: "https://www.linkedin.com/in/sibvan/",
+    },
+    {
+      alt: "Instagram",
+      src: "/footer/instagram.svg",
+      bg: "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)",
+      href: "https://www.instagram.com/siberian_vanya/",
+    },
+    {
+      alt: "Telegram",
+      src: "/footer/telegram.svg",
+      bg: "linear-gradient(180deg, #2AABEE 0%, #229ED9 99.21%)",
+      href: "https://t.me/siberian_vanya",
+    },
+    { alt: "HeadHunter", src: "/footer/hh.svg", bg: "#e1011c", href: "https://hh.ru/resume/a915d232ff0f1102890039ed1f4d346c61736b" },
+    { alt: "Хабр Карьера", src: "/footer/habr.svg", bg: "#6274BC", href: "https://career.habr.com/sibvan" },
+    { alt: "GitHub", src: "/footer/github.svg", bg: "#1B1F23", href: "https://github.com/sibvan" },
+  ];
+
+  const jobs = await cms.find({ type: Job });
+  const projects = await cms.find({ type: Project });
+  const stacks = await cms.find({ type: Stack });
+
+  const getCurrentAge = () => {
+    const now = new Date();
+    let age = now.getFullYear() - 1993;
+
+    if (now < new Date(now.getFullYear(), 10, 26)) {
+      age--;
+    }
+
+    return age;
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div className="mx-auto flex max-w-[1536px] min-w-[320px] flex-col gap-[calc(100px*8/24)] px-3 pt-[calc(200px*8/24)] pb-[calc(300px*8/24)] md:gap-[calc(100px*16/24)] md:pt-[calc(200px*16/24)] md:pb-[calc(300px*16/24)] xl:gap-[100px] xl:pt-[200px] xl:pb-[300px]">
+      <HeroSection age={getCurrentAge()} />
+      <JobsSection jobsList={jobs} />
+      <ProjectsSection projectsList={projects} />
+      <StacksSection stacksList={stacks} />
+      <FooterSection socialsList={socials} />
     </div>
   );
 }

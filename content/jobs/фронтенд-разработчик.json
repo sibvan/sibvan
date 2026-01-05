@@ -1,0 +1,50 @@
+{
+  "_id": "37ki5ckl97HTXlptmf73HiA7XiT",
+  "_type": "Job",
+  "_index": "a0",
+  "title": "Фронтенд-разработчик",
+  "company": {
+    "title": "ProSense",
+    "url": {
+      "_id": "37kiG4OS8MkweBcVubdsOq7abWm",
+      "_type": "url",
+      "_url": "https://www.prosense.digital/",
+      "_title": "",
+      "_target": "_blank"
+    },
+    "color": "#2E79E4"
+  },
+  "period": "С ноября 2025 г",
+  "responsibilities": [
+    {
+      "_id": "37kk7xFLBPgFTkgOno0KLTSLZcQ",
+      "_index": "a0",
+      "_type": "Responsibility",
+      "description": "Поддержка и развитие существующих клиентских проектов."
+    },
+    {
+      "_id": "37kk8FmhxJyMR9SM9tq25gNWtug",
+      "_index": "a1",
+      "_type": "Responsibility",
+      "description": "Разработка фронтенда с использованием Vue.js (Nuxt), React (Next.js), PHP."
+    },
+    {
+      "_id": "37kk9d56fp9xL9PQgMjXyIUP4x6",
+      "_index": "a2",
+      "_type": "Responsibility",
+      "description": "Участие в создании новых клиентских проектов."
+    },
+    {
+      "_id": "37kkAUSdJh64dRyUKAi8fNL3fYR",
+      "_index": "a3",
+      "_type": "Responsibility",
+      "description": "Работа с Git: pull/merge requests, cherry-pick, squash, code review."
+    },
+    {
+      "_id": "37kkBMnEHYbofYgesamzowaX6xC",
+      "_index": "a4",
+      "_type": "Responsibility",
+      "description": "Кросс-функциональное взаимодействие с менеджерами, дизайнерами и разработчиками."
+    }
+  ]
+}

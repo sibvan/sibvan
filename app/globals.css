@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-black: #121213;
+  --color-white: #f1f1f4;
+  --color-grey-200: #1f1f20;
+  --color-grey-100: #575759;
+
+  --color-red: #e15e42;
+  --color-yellow: #ffc700;
+  --color-green: #15ad70;
+
+  --color-prosense: #2e79e4;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.card-url {
+  background:
+    radial-gradient(circle at 8px 8px, var(--color-red) 8px, transparent 8px),
+    radial-gradient(
+      circle at 32px 8px,
+      var(--color-yellow) 8px,
+      transparent 8px
+    ),
+    radial-gradient(circle at 56px 8px, var(--color-green) 8px, transparent 8px);
+}
+
+.cards-gap {
+  @apply gap-2 md:gap-4 xl:gap-6;
+}
+
+.card-default {
+  @apply bg-grey-200 p-6;
+}
+
+.text-age {
+  @apply text-[max(96px,calc((100dvw-12px-12px-8px)/2-48px))]/[100%] font-extralight opacity-20 md:text-[calc((100dvw-16px-16px-12px-12px)/3-48px)] xl:text-[min(312px,calc((100dvw-24px-24px-24px-12px-12px)/4-48px))];
+}
+
+.text-title {
+  @apply text-[38px]/[100%] md:text-[53px] xl:text-[70px];
+}
+
+.text-24 {
+  @apply text-[16px]/[100%] md:text-[20px] xl:text-[24px];
+}
+
+.text-24-120 {
+  @apply text-[16px]/[120%] md:text-[20px] xl:text-[24px];
+}
+
+.text-16 {
+  @apply text-[16px]/[100%];
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-black);
+  color: var(--color-white);
+  font-family: "Cascadia Code", monospace;
 }

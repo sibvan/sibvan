@@ -1,0 +1,19 @@
+{
+  "_id": "37kkilixXw99mUcVTGimE5br9Bz",
+  "_type": "Project",
+  "_index": "a0",
+  "title": "Мой сайт",
+  "url": {
+    "_id": "37kkjpX8D2iyIf6G0SjjF1rwLhI",
+    "_type": "url",
+    "_url": "https://sibvan.dev/",
+    "_title": "",
+    "_target": "_self"
+  },
+  "video": {
+    "_id": "37ngAs0HnzdsiMiPF5aoYgLJkXF",
+    "_type": "file",
+    "_entry": "37ng7bMJRMyns9d5pEpMO4TTN1U"
+  },
+  "description": "Тот, на котором вы сейчас находитесь"
+}
