@@ -55,7 +55,7 @@ const ProjectsSection = (props: ProjectsProps) => {
               <p className="text-16 card-url text-right">{item.url._url}</p>
               <div className="bg-grey-100 flex-1 rounded-[10px] overflow-hidden">
                 <video className="object-cover w-full h-full" muted autoPlay loop>
-                  <source src={`/cms${item.video.href}`} type="video/webm" />
+                  <source src={`/cms${item.video.href}`} type="video/mp4" />
                 </video>
               </div>
 
