@@ -1,15 +1,20 @@
-import { ReactNode } from "react";
+import { CSSProperties, ReactNode } from "react";
 import clsx from "clsx";
 
 type CardProps = {
   children: ReactNode;
   className?: string;
+  style?: CSSProperties;
 };
 
 const Card = (props: CardProps) => {
-  const { children, className } = props;
+  const { children, className, style } = props;
 
-  return <div className={clsx(className, "rounded-[20px]")}>{children}</div>;
+  return (
+    <div style={style} className={clsx(className, "rounded-[20px]")}>
+      {children}
+    </div>
+  );
 };
 
 export default Card;
