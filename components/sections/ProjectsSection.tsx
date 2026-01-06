@@ -52,7 +52,11 @@ const ProjectsSection = (props: ProjectsProps) => {
             key={item._id}
           >
             <Card className="card-default flex aspect-square flex-col gap-6 transition-shadow duration-300 ease-in-out group-hover:inset-shadow-[0px_0px_0px_1000px] group-hover:inset-shadow-black group-hover:outline group-hover:-outline-offset-1 group-hover:outline-white/10">
-              <p className="text-16 card-url text-right">{item.url._url}</p>
+              <div className="card-url flex w-full justify-end">
+                <p className="text-16 w-[calc(100%-80px)] truncate text-right">
+                  {item.url._url}
+                </p>
+              </div>
               <div className="relative flex-1 overflow-hidden rounded-[10px]">
                 <div className="bg-grey-100 absolute h-full w-full animate-pulse"></div>
                 <video
