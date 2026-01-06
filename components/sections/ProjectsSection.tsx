@@ -45,15 +45,15 @@ const ProjectsSection = (props: ProjectsProps) => {
           <a
             className={clsx(
               id === 1 && "md:col-span-2 md:row-span-2 xl:-order-1",
-              "group",
+              "group min-w-0",
             )}
             href={item.url._url}
             target={item.url._target}
             key={item._id}
           >
             <Card className="card-default flex aspect-square flex-col gap-6 transition-shadow duration-300 ease-in-out group-hover:inset-shadow-[0px_0px_0px_1000px] group-hover:inset-shadow-black group-hover:outline group-hover:-outline-offset-1 group-hover:outline-white/10">
-              <div className="card-url flex w-full justify-end">
-                <p className="text-16 w-[calc(100%-80px)] truncate text-right">
+              <div className="card-url flex justify-end">
+                <p className="text-16 w-[calc(100%-80px)] truncate">
                   {item.url._url}
                 </p>
               </div>
