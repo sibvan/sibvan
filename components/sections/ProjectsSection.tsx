@@ -64,6 +64,7 @@ const ProjectsSection = (props: ProjectsProps) => {
                   muted
                   autoPlay
                   loop
+                  playsInline
                 >
                   <source src={`/cms${item.video.href}`} type="video/mp4" />
                 </video>
