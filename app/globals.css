@@ -24,6 +24,18 @@
     radial-gradient(circle at 56px 8px, var(--color-green) 8px, transparent 8px);
 }
 
+.carousel-card-left {
+  @apply -translate-x-1 scale-[calc(((100dvw-24px)/1)/((100dvw-24px)/1-8px))] md:-translate-x-2 md:scale-[calc(((100dvw-24px)/3)/((100dvw-24px)/3-16px))] xl:-translate-x-3 xl:scale-[calc(((100dvw-24px)/5)/((100dvw-24px)/5-24px))];
+}
+
+.carousel-card-center {
+  @apply scale-[calc(((100dvw-24px)/1)/((100dvw-24px)/1-16px))] md:scale-[calc(((100dvw-24px)/3)/((100dvw-24px)/3-32px))] xl:scale-[calc(((100dvw-24px)/5)/((100dvw-24px)/5-48px))];
+}
+
+.carousel-card-right {
+  @apply translate-x-1 scale-[calc(((100dvw-24px)/1)/((100dvw-24px)/1-8px))] md:translate-x-2 md:scale-[calc(((100dvw-24px)/3)/((100dvw-24px)/3-16px))] xl:translate-x-3 xl:scale-[calc(((100dvw-24px)/5)/((100dvw-24px)/5-24px))];
+}
+
 .cards-gap {
   @apply gap-2 md:gap-4 xl:gap-6;
 }

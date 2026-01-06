@@ -59,7 +59,7 @@ const JobsSection = (props: ExperienceProps) => {
                   <a
                     style={{ color: item?.company?.color }}
                     className={clsx(
-                      "text-24 transition-color block underline opacity-80 duration-300 hover:opacity-100",
+                      "text-24 transition block underline opacity-80 duration-300 hover:opacity-100",
                       item.company.title === "ProSense" && "text-prosense",
                     )}
                     target={item.company.url._target}
