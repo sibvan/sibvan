@@ -3,5 +3,17 @@
   "_type": "Project",
   "_index": "a2",
   "title": "Платформа для обучения по YouTube",
-  "description": ""
+  "url": {
+    "_id": "38GhN5IYVQwqbXTU3ExoQygTtFD",
+    "_type": "url",
+    "_url": "http://he-ya.ru",
+    "_title": "",
+    "_target": "_blank"
+  },
+  "video": {
+    "_id": "38GhNf4CzWGdcjXs4SknsyJEmq6",
+    "_type": "file",
+    "_entry": "38GhHPqfCXsuNfvhDSgcwANmAOm"
+  },
+  "description": "Позволяет отслеживать прогресс по плейлистам"
 }
