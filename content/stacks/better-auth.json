@@ -2,5 +2,10 @@
   "_id": "39OureQS4hT9SolcOAAaiKHjFKd",
   "_type": "Stack",
   "_index": "aH",
-  "title": "Better Auth"
+  "title": "Better Auth",
+  "logo": {
+    "_id": "39OusOM9Fap3NsEPPRZyQ8oaVDR",
+    "_type": "image",
+    "_entry": "39OuljfcgbJkAYQtuniwpllzVAq"
+  }
 }
