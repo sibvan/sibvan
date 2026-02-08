@@ -2,5 +2,10 @@
   "_id": "39Ouo2uZVs09jZzG3e0jsRdV2rA",
   "_type": "Stack",
   "_index": "aG",
-  "title": "MongoDB"
+  "title": "MongoDB",
+  "logo": {
+    "_id": "39OupQMNQd1CngwSTaSSEjTYZvz",
+    "_type": "image",
+    "_entry": "39Oulg5Q4wPcV1Ov6Shjsu8XapL"
+  }
 }
